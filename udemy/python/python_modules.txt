@@ -1,0 +1,70 @@
+### Modules and Packages
+________________________________________
+
+module.py
+
+def func():
+   print('module.py')
+
+________________________________________
+
+program.py
+
+# import module
+from module import func
+
+# import module from package
+from package import main
+
+# import module from subpackage
+from package.subpackage import subscript
+
+func()
+
+main.report_main()
+
+subscript.report_sub()
+
+
+________________________________________
+
+package/
+	__init__.py
+	main.py
+	subpackage/
+		subscript.py
+		__init__.py
+
+________________________________________
+
+subscript.py
+
+def report_sub():
+  print('subscript.py')
+
+________________________________________
+
+main.py
+
+def report_main():
+   print('main.py')
+
+________________________________________
+
+
+### __name__ and __main__
+
+
+if __name__ == '__main__':
+  print('py script exectued directly')
+else:
+  print('py script imported')
+
+_________________________________________
+ 
+
+
+
+
+
+

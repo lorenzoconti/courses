@@ -1,0 +1,5 @@
+pylint
+requests
+lxml
+bs4
+pillow

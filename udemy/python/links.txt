@@ -1,0 +1,11 @@
+docs.python.org/3
+
+http://codingbat.com/python 
+
+https://projecteuler.net/archives
+
+http://www.codeabbey.com/index/task_list
+
+https://www.reddit.com/r/dailyprogrammer
+
+http://www.pythonchallenge.com/
