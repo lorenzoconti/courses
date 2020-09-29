@@ -75,6 +75,19 @@ arr_bool = arr > 5
 print(arr[arr_bool])
 print(arr[arr % 2 == 0])
 
+# array operations
+print(arr + arr)
+print(arr - arr)
+print(arr * arr)
+print(arr + 100)
+
+print(np.sqrt(arr))
+print(np.exp(arr))
+print(np.sin(arr))
+
+# runtime warning: -inf
+print(np.log(arr))
+
 
 
 
