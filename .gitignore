@@ -1,4 +1,5 @@
 env/
+GPUCache/
 
 .idea
 .vscode
