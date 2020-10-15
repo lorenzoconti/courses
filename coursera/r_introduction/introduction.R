@@ -2,7 +2,7 @@ paste(c(1:3), c("X", "Y", "Z"), sep ="")
 ## [1] "1X" "2Y" "3Z"
 paste(LETTERS, 1:4, sep = "-")
 
-rndm <- sample( rnorm(1000), rep(NA, 1000), 100)
+rndm <- sample(rnorm(1000), 1000, FALSE)
 
 nums <- 1:10
 # only the 2nd and 10th element
@@ -165,5 +165,62 @@ mean(data[,4][data[,5] == 6])
 
 # maximum ozone in the month of may
 max(data[,1][!is.na(data[,1])][data[,5] == 5])
+
+# control structures
+
+# if
+if (TRUE) {
+  # do something
+} else {
+  # do something else
+}
+
+conditional_assignment <- if(TRUE) {
+                                      3
+                                    } else {
+                                              2
+                                    }
+# for loops
+
+for(i in 1:10){
+  # do something
+}
+
+letters <- c("a", "b", "c", "d", "e")
+
+for(i in seq_along(letters)) {
+  # do something
+}
+
+for(letter in letters) print(letter)
+
+# while loops
+
+count <- 0
+while(count < 10) {
+  print(count)
+  count <- count +1 
+}
+
+# repeat
+
+# repeat {
+#   infinite loop
+#   you can exit with break
+# }
+
+# next & return 
+
+for(i in 1:20){
+  if(i <= 2) {
+    next
+  }
+  # do something or return
+}
+
+
+
+
+
 
 
