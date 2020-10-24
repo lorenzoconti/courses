@@ -1,3 +1,6 @@
+## specdata path: 
+## .\coursera\data_science_specialization\r\data\rprog_data_specdata.zip
+
 pollutantmean <- function(directory, pollutant, id = 1:332){
   
   sum <- 0
