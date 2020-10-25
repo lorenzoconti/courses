@@ -3,3 +3,7 @@ GPUCache/
 
 .idea
 .vscode
+
+.Rproj.user
+.Rhistory
+.RData
