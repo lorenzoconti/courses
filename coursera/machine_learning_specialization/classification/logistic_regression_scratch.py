@@ -47,7 +47,7 @@ feature_matrix, sentiment = get_numpy_data(products, important_words, 'sentiment
 print(feature_matrix.shape)
 
 
-def predict_probabilty(feature_matrix, coefficients):
+def predict_probability(feature_matrix, coefficients):
     score = np.dot(feature_matrix, coefficients)
     predictions = 1/(1+np.exp(-score))
     return predictions
@@ -72,7 +72,7 @@ def logistic_regression(feature_matrix, sentiment, initial_coefficients, step_si
 
     for itr in range(max_iter):
 
-        predictions = predict_probabilty(feature_matrix, coefficients)
+        predictions = predict_probability(feature_matrix, coefficients)
         indicator = sentiment == 1
         errors = np.transpose(np.array([indicator])) - predictions
 
@@ -102,7 +102,7 @@ max_iter = 301
 
 coefficients = logistic_regression(feature_matrix, sentiment, initial_coefficients, step_size, max_iter)
 
-predictions = predict_probabilty(feature_matrix, coefficients)
+predictions = predict_probability(feature_matrix, coefficients)
 num_positive = sum(predictions > 0.5)
 
 score = np.dot(feature_matrix, coefficients)

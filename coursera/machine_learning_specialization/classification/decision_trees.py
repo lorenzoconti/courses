@@ -1,9 +1,7 @@
 import turicreate as tc
 import pandas as pd
-import graphviz
 from sklearn import tree
 from sklearn.tree import DecisionTreeClassifier
-from os import system
 
 loans = tc.SFrame.read_csv('lending-club-data.csv')
 
